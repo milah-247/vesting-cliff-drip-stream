@@ -6,6 +6,8 @@ A production-ready Soroban smart contract that combines a **time-locked cliff** 
 
 > Coming from standard Drips? See the [comparison guide](docs/comparison.md) for a feature table, cancel behaviour details, and migration instructions.
 >
+> Setting up a local development environment? See the [Developer Onboarding Guide](docs/developer-onboarding.md) for step-by-step instructions.
+>
 > Have a question? Check the [FAQ](docs/faq.md) for common answers about stream lifecycle, claiming, token support, and fees.
 
 ---
@@ -115,6 +117,7 @@ A [scheduled GitHub Actions workflow](.github/workflows/drift-detection.yml) run
 | [Emergency Override](docs/runbooks/emergency-override.md) | Manual infrastructure changes with required post-hoc Terraform update |
 | [RDS Restore](docs/runbooks/rds-restore.md) | Database snapshot restore procedure |
 | [Disaster Recovery](docs/runbooks/disaster-recovery.md) | Full system recovery scenarios |
+| [Backfill Stream Events](docs/runbooks/backfill-stream-events.md) | Replay Horizon events into `stream_events` after indexer downtime or decoder fix |
 
 See the full [runbooks index](docs/runbooks/README.md) for all operational procedures.
 
@@ -292,7 +295,8 @@ See [docs/sbom.md](docs/sbom.md) for the full policy, allowed license list, and 
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for a full history of notable changes.
+- [CHANGELOG.md](CHANGELOG.md) — Project-level changes and release history.
+- [API Changelog](docs/api-changelog.md) — Contract and backend API changes for integrators.
 
 ## License
 

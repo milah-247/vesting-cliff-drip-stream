@@ -6,6 +6,7 @@ mod test_cancel;
 mod test_claim;
 mod test_create;
 mod test_edge_cases;
+mod test_event_snapshots;
 mod test_events;
 mod test_allowlist;
 mod test_properties;
@@ -14,6 +15,8 @@ mod test_views;
 mod test_dust;
 mod test_variable_rate;
 mod test_initialize;
+mod test_sponsor_streams;
+mod test_invalid_token;
 
 pub use soroban_sdk::{
     testutils::{Address as _, Ledger, LedgerInfo},
